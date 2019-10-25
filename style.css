@@ -28,8 +28,6 @@ img{
 .thumbnails{
     display: flex;
     margin-top: 20px;
-    width: 500px;
-    height: auto;
     justify-content: space-between;
 }
 
