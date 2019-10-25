@@ -6,8 +6,8 @@ body{
 
 .layout{
     display: flex;
-    width: 700px;
-    height: 700px;
+    width: 1000px;
+    height: 900px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -19,12 +19,18 @@ img:nth-child(3) {
 }
 
 .photoviewer{
-    width: 700px;
+    width: auto;
     background-color: #fff;
     justify-self: center;
+    height: auto;
 }
 
 #slider{
     width: 800px;
     height: 450px;
+}
+
+.thumbnails{
+    width: 160px;
+    height: 90px;
 }

@@ -35,12 +35,11 @@ let num = 0;
 
 function next() {
     let slider = document.getElementById("slider");
-    console.log(slider);
     num++;
     if (num >= images.length) {
         num = 0;
     }
-    slider.style.backgroundImage = 'url(images/' + images[num] + ')';
+    slider.style.backgroundImage = 'url(images/' + images[num].file + ')';
 }
 next();
 
@@ -51,6 +50,17 @@ function prev() {
     if (num < 0) {
         num = images.length - 0;
     }
-    slider.style.backgroundImage = 'url(images/' + images[num] + ')';
+    slider.style.backgroundImage = 'url(images/' + images[num].file + ')';
 }
 prev();
+
+let thumb = document.getElementsByClassName("thumbnails");
+
+generateThumbnails = function () {
+    images.forEach(function(images) {
+        let thumb = document.createElement('div');
+        thumb.style.backgroundImage = 'url(images/' + images.file + ')';
+        thumb.appendChild(thumb);
+    });
+}
+generateThumbnails();
