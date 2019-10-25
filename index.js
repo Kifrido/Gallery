@@ -56,7 +56,7 @@ prev();
 
 let thumbnails = document.getElementsByClassName("thumbnails");
 
-generateThumbnails = function () {
+function generateThumbnails () {
     images.forEach(function(images) {
         let thumb = document.createElement('div');
         thumb.style.backgroundImage = 'url(images/' + images[num].file + ')';
