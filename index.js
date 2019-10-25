@@ -54,12 +54,12 @@ function prev() {
 }
 prev();
 
-let thumbnails = document.getElementsByClassName("thumbnails");
+let thumbnails = document.querySelector(".thumbnails");
 
 function generateThumbnails () {
     images.forEach(function(images) {
         let thumb = document.createElement('div');
-        thumb.style.backgroundImage = 'url(images/' + images[num].file + ')';
+        thumb.style.backgroundImage = 'url(images/' + images.file + ')';
         thumbnails.appendChild(thumb);
     });
 }

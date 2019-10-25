@@ -25,7 +25,16 @@ img{
     height: 450px;
 }
 
+.thumbnails{
+    display: flex;
+    margin-top: 20px;
+    width: 500px;
+    height: auto;
+    justify-content: space-between;
+}
+
 .thumbnails div{
     width: 160px;
     height: 90px;
+    background-size: auto 100%;
 }
