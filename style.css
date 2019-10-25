@@ -4,15 +4,6 @@ body{
     justify-content: center; 
 }
 
-.layout{
-    display: flex;
-    width: 1000px;
-    height: 900px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
 img:nth-child(3) {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
@@ -22,7 +13,11 @@ img:nth-child(3) {
     width: auto;
     background-color: #fff;
     justify-self: center;
-    height: auto;
+    height: 500px;
+}
+
+img{
+    background-size: auto 100%;
 }
 
 #slider{
@@ -30,7 +25,7 @@ img:nth-child(3) {
     height: 450px;
 }
 
-.thumbnails{
+.thumbnails div{
     width: 160px;
     height: 90px;
 }
